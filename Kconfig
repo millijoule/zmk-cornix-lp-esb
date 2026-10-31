@@ -1,14 +1,17 @@
 # SPDX-License-Identifier: MIT
 
-# Cornix upstream v3.0.0 board definitions select the SoC, but predate
-# Zephyr 4.1's ZMK board compatibility marker. Extend the existing board
-# symbols so only the explicit ZMK board variants opt in.
+# Cornix upstream v3.0.0 board definitions predate Zephyr 4.1's
+# ZMK board compatibility marker. Extend the existing board symbols
+# and select compatibility only for their explicit ZMK variants.
 
 config BOARD_CORNIX_LEFT
+    bool
     select ZMK_BOARD_COMPAT if BOARD_CORNIX_LEFT_NRF52840_ZMK
 
 config BOARD_CORNIX_PH_LEFT
+    bool
     select ZMK_BOARD_COMPAT if BOARD_CORNIX_PH_LEFT_NRF52840_ZMK
 
 config BOARD_CORNIX_RIGHT
+    bool
     select ZMK_BOARD_COMPAT if BOARD_CORNIX_RIGHT_NRF52840_ZMK
