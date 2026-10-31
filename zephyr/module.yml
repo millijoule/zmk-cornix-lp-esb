@@ -1,4 +1,5 @@
 name: zmk-cornix-lp-esb
 build:
+  kconfig: Kconfig
   settings:
     board_root: .
