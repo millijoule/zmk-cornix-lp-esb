@@ -1,0 +1,14 @@
+---
+include:
+  - board: nice_nano//zmk
+    shield: cornix_dongle_adapter cornix_esb_link
+    snippet: nrf52840-nosd
+    artifact-name: cornix_dongle_esb_nosd
+
+  - board: cornix_ph_left//zmk
+    shield: cornix_esb_link
+    artifact-name: cornix_left_esb
+
+  - board: cornix_right//zmk
+    shield: cornix_esb_link
+    artifact-name: cornix_right_esb

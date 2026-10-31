@@ -1,0 +1,44 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+    - name: hitsmaxft
+      url-base: https://github.com/hitsmaxft
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
+      clone-depth: 1
+      import:
+        file: app/west.yml
+
+    - name: zmk-feature-split-esb
+      remote: badjeff
+      revision: 314c7cbaf4a74e1add1d6ffc8249de3e29965b8c
+      clone-depth: 1
+
+    - name: sdk-nrf
+      remote: badjeff
+      revision: 9b3d2623fdcd9c0fd0284f860beea924568c9826
+      path: nrf
+      clone-depth: 1
+
+    - name: nrfxlib
+      remote: nrfconnect
+      revision: dfadf17305d8f000eda9aa74a5b9ff1c5647a23e
+      repo-path: sdk-nrfxlib
+      path: nrfxlib
+      clone-depth: 1
+
+    - name: zmk-keyboard-cornix
+      remote: hitsmaxft
+      revision: v3.0.0
+      clone-depth: 1
+
+  self:
+    path: config

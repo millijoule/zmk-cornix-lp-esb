@@ -1,0 +1,4 @@
+name: zmk-cornix-lp-esb
+build:
+  settings:
+    board_root: .

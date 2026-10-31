@@ -1,0 +1,13 @@
+/*
+ * Shared ESB addressing for the Cornix LP dongle and both peripherals.
+ * The address values are fixed for this keyboard set; they are not encryption.
+ */
+
+/ {
+    esb_split {
+        compatible = "zmk,esb-split";
+        base-addr-0 = <0x91 0xA4 0x7C 0x2D>;
+        base-addr-1 = <0x6B 0xD3 0xE8 0x51>;
+        addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    };
+};
