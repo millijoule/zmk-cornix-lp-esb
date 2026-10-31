@@ -12,3 +12,4 @@ include:
   - board: cornix_right//zmk
     shield: cornix_esb_link
     artifact-name: cornix_right_esb
+# CI matrix: ESB-only bring-up targets.
