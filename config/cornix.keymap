@@ -29,7 +29,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <125>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             quick-tap-ms = <125>;
         };
 
@@ -47,7 +47,7 @@
             #binding-cells = <0>;
             bindings = <&ht TAB TAB>, <&ht TAB ESC>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
         };
 
         Lalt_td: Lalt_td {
@@ -56,7 +56,7 @@
             #binding-cells = <0>;
             bindings = <&ht LALT Y>, <&lt 1 LALT>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
         };
 
         Lgui_td: Lgui_td {
