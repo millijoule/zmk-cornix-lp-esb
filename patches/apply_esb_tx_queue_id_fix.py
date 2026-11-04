@@ -26,6 +26,10 @@ def main() -> None:
     path = Path(sys.argv[1])
     source = path.read_text(encoding="utf-8")
 
+    if "struct tx_queue_entry" in source and "message ID must follow the packet" in source:
+        print(f"ESB TX message-ID fix already present in {path}")
+        return
+
     source = replace_once(
         source,
         """struct retry_entry {
